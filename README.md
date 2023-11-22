@@ -1,19 +1,16 @@
-Let's begin by sourcing our ORS installation.
-
-```bash
-source /opt/ros/foxy/setup.bash
-```
-
-To know which shell are we using
-
+We begin by knowing which shell we are using on `Linux`:
 ```bash
 which $SHELL
+```
+Sourcing our **ROS** installation.
+```bash
+source /opt/ros/foxy/setup.bash
 ```
 Run the `turtlesim_node` executable from the `turtlesim` package.
 ```bash
 ros2 run turtlesim turtlesim_node
 ```
-The below command rturns the list of current active topics
+The below command returns the list of current active topics
 ```bash
 ros2 topic list -t
 ```
@@ -21,7 +18,7 @@ Details on a particular type of message can be retrieved through:
 ```bash
 ros2 interface show geometry_msgs/msg/Twist
 ```
-We can publish data onto a topic as foolows:
+We can publish data on a topic as follows:
 ```bash
 ros2 topic pub --once /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 1.}}"
 ```
@@ -38,7 +35,7 @@ We can also use the keyboard to move around `turtle1`
 ```bash
 ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap cmd_vel:=/turtle1/cmd_vel
 ```
-This utility allows to display the graph flow of data between our running nodes; 
+This utility allows us to display the graph of data flow between our running nodes; 
 ```bash
 rqt_graph
 ```
