@@ -1,4 +1,4 @@
-We begin by knowing which shell we are using on `Linux`:
+We begin by checking which shell we are using on `Linux`:
 ```bash
 which $SHELL
 ```
