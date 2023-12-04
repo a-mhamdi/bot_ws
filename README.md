@@ -1,10 +1,6 @@
-We begin by checking which shell we are using on `Linux`:
+We begin by sourcing our **ROS** installation and current shared package directory.
 ```bash
-which $SHELL
-```
-Sourcing our **ROS** installation.
-```bash
-source /opt/ros/humble/setup.bash
+source install/setup.bash
 ```
 The launch file `launch_sim.launch.py` displays the robot in `gazebo` and publish the `/robot_description` and `/scan` topics to `rviz`
 ```bash
