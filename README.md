@@ -35,7 +35,7 @@ We can also use the keyboard to move around `turtle1`
 ```bash
 ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap cmd_vel:=/turtle1/cmd_vel
 ```
-The executable `turtlesim_teleop` do the same previous thing and allows to avoid all the hastle of remapping
+The executable `turtle_teleop_key` does the same previous thing and avoids all the hassle of remapping
 ```bash
 ros2 run turtlesim turtle_teleop_key
 ```
