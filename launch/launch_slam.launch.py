@@ -5,9 +5,8 @@ from ament_index_python.packages import get_package_share_directory
 from launch_ros.substitutions import FindPackageShare
 
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
+from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import Command, LaunchConfiguration
 
 from launch_ros.actions import Node
 
@@ -31,9 +30,6 @@ def generate_launch_description():
 
     slam_params_file = os.path.join(
         pkg_share, 'params', 'mapper_params_online_async.yaml')
-
-    map_file = os.path.join(
-        pkg_share, 'maps', 'house_map.yaml')
 
     # SLAM stack
     slam_stack_cmd = IncludeLaunchDescription(
