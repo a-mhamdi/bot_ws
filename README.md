@@ -4,7 +4,7 @@ which $SHELL
 ```
 Sourcing our **ROS** installation.
 ```bash
-source /opt/ros/foxy/setup.bash
+source /opt/ros/humble/setup.bash
 ```
 Run the `turtlesim_node` executable from the `turtlesim` package.
 ```bash
