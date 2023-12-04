@@ -37,7 +37,7 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap cmd_vel:
 ```
 The executable `turtlesim_teleop` do the same previous thing and allows to avoid all the hastle of remapping
 ```bash
-ros2 run trutlesim trutlesim_teleop
+ros2 run turtlesim turtle_teleop_key
 ```
 This utility allows us to display the graph of data flow between our running nodes; 
 ```bash
