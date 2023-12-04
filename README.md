@@ -6,11 +6,11 @@ The launch file `launch_sim.launch.py` displays the robot in `gazebo` and publis
 ```bash
 ros2 launch roue_bot launch_sim.launch.py
 ```
-## SLAM
+## Mapping using SLAM toolbox
 ```bash
 ros2 launch roue_bot launch_slam.launch.py
 ```
-## Navigation
+## Localization and navigation
 ```bash
 ros2 launch roue_bot launch_nav.launch.py
 ```
