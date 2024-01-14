@@ -2,9 +2,9 @@ To run the `listener` node, we type
 ```bash
 ros2 run listen_talk_pkg listener
 ```
-If we want to publish to to the topic `listen_talk`, we do the following:
+If we let the `talker` node publish to the topic `listen_talk`:
 ```bash
 ros2 run listen_talk_pkg talker
 ```
-Results will look like the below preview.
+we get the results in the preview below.
 ![TMUX](tmux_preview.png)
