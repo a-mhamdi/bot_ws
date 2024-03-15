@@ -7,7 +7,7 @@ Source the **ROS** installation and current shared package directory.
 ```bash
 source install/setup.bash
 ```
-Compile the package:
+Compile the packages:
 1. `listen_talk_pkg`
 ```bash
 colcon build --packages-select listen_talk_pkg
